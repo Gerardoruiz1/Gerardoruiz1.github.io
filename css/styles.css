@@ -1,119 +1,237 @@
-@charset "UTF-8";
-:root {
-  --bs-primary: #bd5d38;
-  --bs-dark: #212529;
-  --bs-body-font-family: Muli, -apple-system, sans-serif;
+/* --------------------
+   GLOBAL RESET
+-------------------- */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  padding-top: 54px;
-  color: #212529;
-  font-family: var(--bs-body-font-family);
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #0b0f14;
+  color: #e5e7eb;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
+/* --------------------
+   COLOR SYSTEM
+-------------------- */
+:root {
+  --bg-main: #0b0f14;
+  --bg-section: #0f1623;
+  --bg-card: #121826;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.15);
+  --text-main: #e5e7eb;
+  --text-muted: #9ca3af;
+  --border-subtle: rgba(255, 255, 255, 0.06);
 }
 
-/* Side Navigation Styling */
+/* --------------------
+   SIDENAV
+-------------------- */
 #sideNav {
-  text-align: center;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  background-color: var(--bs-primary) !important;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.6);
 }
 
 #sideNav .navbar-brand {
-  display: flex;
-  margin: auto auto 0;
-  padding: 0.5rem;
+  text-align: center;
 }
 
-#sideNav .navbar-brand .img-profile {
-  max-width: 10rem;
-  max-height: 10rem;
-  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+#sideNav .img-profile {
+  border: 3px solid var(--accent);
 }
 
-@media (min-width: 992px) {
-  #sideNav {
-    position: fixed;
-    width: 17rem;
-    height: 100vh;
-  }
-  #sideNav .navbar-collapse {
-    display: flex;
-    align-items: flex-start;
-    flex-grow: 0;
-    width: 100%;
-    margin-bottom: auto;
-  }
-  #sideNav .navbar-collapse .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-  }
+#sideNav .navbar-nav .nav-item .nav-link {
+  color: var(--text-muted);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
 }
 
-/* Sections */
+#sideNav .navbar-nav .nav-item .nav-link:hover,
+#sideNav .navbar-nav .nav-item .nav-link.active {
+  color: var(--accent);
+}
+
+/* --------------------
+   SECTIONS
+-------------------- */
 .resume-section {
-  display: flex;
-  align-items: center;
-  padding: 5rem 1rem;
   min-height: 100vh;
+  padding: 5rem 3rem;
+  background-color: var(--bg-main);
+}
+
+.resume-section:nth-child(even) {
+  background-color: var(--bg-section);
+}
+
+.resume-section-content {
+  max-width: 900px;
+}
+
+/* --------------------
+   HEADINGS
+-------------------- */
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Saira Extra Condensed", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 h1 {
-  text-transform: uppercase;
-  font-size: 6rem;
-  line-height: 5.5rem;
+  font-size: 3.8rem;
 }
 
 h2 {
-  text-transform: uppercase;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 h3 {
-  text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .text-primary {
-  color: var(--bs-primary) !important;
+  color: var(--accent) !important;
 }
 
+/* --------------------
+   TEXT
+-------------------- */
 .subheading {
-  text-transform: uppercase;
+  color: var(--text-muted);
   font-weight: 500;
-  font-family: "Saira Extra Condensed", -apple-system, sans-serif;
-  font-size: 1.5rem;
 }
 
-.social-icons .social-icon {
+p {
+  color: var(--text-main);
+}
+
+.lead {
+  font-size: 1.15rem;
+  color: #d1d5db;
+}
+
+/* --------------------
+   EXPERIENCE / PROJECT CARDS
+-------------------- */
+.resume-section-content > .d-flex,
+.resume-section-content > .mb-5 {
+  background: var(--bg-card);
+  border-radius: 14px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.75rem;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resume-section-content > .d-flex:hover,
+.resume-section-content > .mb-5:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.55);
+}
+
+/* --------------------
+   LISTS
+-------------------- */
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  color: #d1d5db;
+}
+
+/* --------------------
+   SKILLS ICONS
+-------------------- */
+.dev-icons {
+  font-size: 2.1rem;
+}
+
+.dev-icons .list-inline-item i {
+  color: var(--text-muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: var(--accent);
+  transform: translateY(-4px);
+}
+
+/* --------------------
+   CHECKLIST
+-------------------- */
+.fa-ul li {
+  color: #d1d5db;
+}
+
+.fa-check {
+  color: var(--accent);
+}
+
+/* --------------------
+   SOCIAL ICONS
+-------------------- */
+.social-icons a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff;
-  border-radius: 100%;
-  font-size: 1.5rem;
-  margin-right: 1.5rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: var(--bg-card);
+  color: var(--text-muted);
+  border-radius: 50%;
+  margin-right: 1rem;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.25s ease;
+}
+
+.social-icons a:hover {
+  color: #000;
+  background-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+/* --------------------
+   HR
+-------------------- */
+hr.m-0 {
+  border-color: var(--border-subtle);
+}
+
+/* --------------------
+   LINKS
+-------------------- */
+a {
+  color: var(--accent);
   text-decoration: none;
 }
 
-.social-icons .social-icon:hover {
-  background-color: var(--bs-primary);
+a:hover {
+  text-decoration: underline;
 }
 
-.dev-icons {
-  font-size: 3rem;
+/* --------------------
+   MOBILE
+-------------------- */
+@media (max-width: 991px) {
+  .resume-section {
+    padding: 3rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
 }
