@@ -20,12 +20,21 @@ export function ContactSection() {
             to get back to you!
           </p>
           
-          <Button variant="hero" size="lg" asChild>
-            <a href="mailto:gerardojrb.ruiz@gmail.com" className="gap-2">
-              <Mail className="w-5 h-5" />
-              Say Hello Through Email
-            </a>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="hero" size="lg" asChild>
+              <a href="mailto:gerardojrb.ruiz@gmail.com" className="gap-2">
+                <Mail className="w-5 h-5" />
+                Say Hello Through Email
+              </a>
+            </Button>
+            
+            <Button variant="heroOutline" size="lg" asChild>
+              <a href="tel:787-903-4261" className="gap-2">
+                <Phone className="w-5 h-5" />
+                Call Me
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
