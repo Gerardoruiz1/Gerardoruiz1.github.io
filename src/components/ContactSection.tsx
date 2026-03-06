@@ -21,9 +21,9 @@ export function ContactSection() {
           </p>
           
           <Button variant="hero" size="lg" asChild>
-            <a href="mailto:hello@alexchen.dev" className="gap-2">
+            <a href="mailto:gerardojrb.ruiz@gmail.com" className="gap-2">
               <Mail className="w-5 h-5" />
-              Say Hello
+              Say Hello Through Email
             </a>
           </Button>
         </div>
