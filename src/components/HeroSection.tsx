@@ -15,11 +15,11 @@ export function HeroSection() {
           </p>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            <span className="text-foreground">Alex Chen.</span>
+            <span className="text-foreground">Gerardo Ruiz.</span>
           </h1>
           
           <h2 className="text-4xl md:text-6xl font-bold text-muted-foreground mb-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
-            I build things for the web.
+            I solve problems with code.
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed animate-slide-up" style={{ animationDelay: "0.4s" }}>
