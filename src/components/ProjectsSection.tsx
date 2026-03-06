@@ -6,7 +6,7 @@ const featuredProjects = [
     description:
       "A comprehensive analytics dashboard for monitoring cloud infrastructure. Features real-time metrics, custom alerts, and detailed performance insights across multiple cloud providers.",
     technologies: ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS"],
-    github: "https://github.com",
+    github: "https://github.com/Gerardoruiz1",
     external: "https://example.com",
     image: "/placeholder.svg",
   },
@@ -15,7 +15,7 @@ const featuredProjects = [
     description:
       "A full-featured marketplace platform with real-time inventory management, secure payment processing, and a powerful admin dashboard for vendors.",
     technologies: ["Next.js", "Stripe", "Prisma", "Redis", "Docker"],
-    github: "https://github.com",
+    github: "https://github.com/Gerardoruiz1",
     external: "https://example.com",
     image: "/placeholder.svg",
   },
@@ -24,7 +24,7 @@ const featuredProjects = [
     description:
       "An AI-powered content generation tool that helps marketers create compelling copy. Includes tone analysis, A/B testing suggestions, and multi-language support.",
     technologies: ["Python", "FastAPI", "OpenAI", "React", "MongoDB"],
-    github: "https://github.com",
+    github: "https://github.com/Gerardoruiz1",
     external: "https://example.com",
     image: "/placeholder.svg",
   },
@@ -35,39 +35,39 @@ const otherProjects = [
     title: "Task Management CLI",
     description: "A command-line task manager with sync capabilities across devices.",
     technologies: ["Rust", "SQLite", "Tokio"],
-    github: "https://github.com",
+    github: "https://github.com/Gerardoruiz1",
   },
   {
     title: "Real-time Chat App",
     description: "Encrypted messaging app with WebSocket support and file sharing.",
     technologies: ["Socket.io", "React", "Node.js"],
-    github: "https://github.com",
+    github: "https://github.com/Gerardoruiz1",
     external: "https://example.com",
   },
   {
     title: "Portfolio Template",
     description: "A customizable developer portfolio template with dark mode support.",
     technologies: ["Astro", "Tailwind", "TypeScript"],
-    github: "https://github.com",
+    github: "https://github.com/Gerardoruiz1",
   },
   {
     title: "Weather Dashboard",
     description: "Beautiful weather app with 7-day forecasts and location tracking.",
     technologies: ["React", "OpenWeather API", "Mapbox"],
-    github: "https://github.com",
+    github: "https://github.com/Gerardoruiz1",
     external: "https://example.com",
   },
   {
     title: "Code Snippet Manager",
     description: "Organize and share code snippets with syntax highlighting.",
     technologies: ["Vue.js", "Firebase", "Prism.js"],
-    github: "https://github.com",
+    github: "https://github.com/Gerardoruiz1",
   },
   {
     title: "Fitness Tracker API",
     description: "RESTful API for tracking workouts and nutrition data.",
     technologies: ["Express", "MongoDB", "JWT"],
-    github: "https://github.com",
+    github: "https://github.com/Gerardoruiz1",
   },
 ];
 
@@ -77,7 +77,7 @@ export function ProjectsSection() {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-2 flex items-center gap-4">
-            <span className="font-mono text-primary text-xl">03.</span>
+            <span className="font-mono text-primary text-xl">02.</span>
             Featured Projects
             <span className="hidden md:block h-px bg-border flex-1 ml-4" />
           </h2>

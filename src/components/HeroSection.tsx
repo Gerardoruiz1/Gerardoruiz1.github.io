@@ -15,11 +15,11 @@ export function HeroSection() {
           </p>
           
           <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            <span className="text-foreground">Alex Chen.</span>
+            <span className="text-foreground">Gerardo Ruiz.</span>
           </h1>
           
           <h2 className="text-4xl md:text-6xl font-bold text-muted-foreground mb-6 animate-slide-up" style={{ animationDelay: "0.3s" }}>
-            I build things for the web.
+            I solve problems with code.
           </h2>
           
           <p className="text-lg text-muted-foreground max-w-xl mb-8 leading-relaxed animate-slide-up" style={{ animationDelay: "0.4s" }}>
@@ -38,7 +38,7 @@ export function HeroSection() {
           
           <div className="flex gap-6 animate-slide-up" style={{ animationDelay: "0.6s" }}>
             <a
-              href="https://github.com"
+              href="https://github.com/Gerardoruiz1"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors hover:-translate-y-1 duration-300"
@@ -46,7 +46,7 @@ export function HeroSection() {
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/gerardojrb/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors hover:-translate-y-1 duration-300"
@@ -54,7 +54,7 @@ export function HeroSection() {
               <Linkedin size={24} />
             </a>
             <a
-              href="mailto:hello@alexchen.dev"
+              href="mailto:gerardojrb.ruiz@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors hover:-translate-y-1 duration-300"
             >
               <Mail size={24} />

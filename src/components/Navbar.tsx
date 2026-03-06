@@ -4,8 +4,8 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Timeline", href: "#timeline" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -48,8 +48,8 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
-          <Button variant="heroOutline" size="sm">
-            Resume
+          <Button variant="heroOutline" size="sm" asChild>
+            <a href="https://drive.google.com/file/d/1JftgkYgG-kTd-U0iNWKLyJJO1Cf0ZDZm/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
           </Button>
         </div>
 
@@ -78,8 +78,8 @@ export function Navbar() {
                 {link.label}
               </a>
             ))}
-            <Button variant="heroOutline" size="sm" className="w-fit">
-              Resume
+            <Button variant="heroOutline" size="sm" className="w-fit" asChild>
+              <a href="https://drive.google.com/file/d/1JftgkYgG-kTd-U0iNWKLyJJO1Cf0ZDZm/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
             </Button>
           </div>
         </div>

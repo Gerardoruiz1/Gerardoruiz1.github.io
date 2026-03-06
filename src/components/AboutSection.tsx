@@ -12,7 +12,7 @@ export function AboutSection() {
           <div className="grid md:grid-cols-3 gap-12 mt-12">
             <div className="md:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                Hello! I'm Alex, a software engineer based in San Francisco. I enjoy 
+                Hello! I'm Gerardo, a software engineer who enjoys 
                 creating things that live on the internet, whether that be websites, 
                 applications, or anything in between. My goal is to always build products 
                 that provide pixel-perfect, performant experiences.
@@ -59,7 +59,7 @@ export function AboutSection() {
               <div className="relative rounded-lg overflow-hidden">
                 <div className="aspect-square bg-secondary rounded-lg border-2 border-primary/20 group-hover:border-primary/50 transition-colors duration-300">
                   <div className="w-full h-full bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-                    <div className="text-6xl font-mono text-primary/50">AC</div>
+                    <div className="text-6xl font-mono text-primary/50">GR</div>
                   </div>
                 </div>
                 <div className="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-300 rounded-lg" />
