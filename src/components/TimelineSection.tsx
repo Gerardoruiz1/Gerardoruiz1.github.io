@@ -32,7 +32,7 @@ export function TimelineSection() {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-2 flex items-center gap-4">
-            <span className="font-mono text-primary text-xl">05.</span>
+            
             Vlog &amp; Timelines
             <span className="hidden md:block h-px bg-border flex-1 ml-4" />
           </h2>
