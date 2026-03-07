@@ -36,7 +36,7 @@ export function ProjectsSection() {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold mb-2 flex items-center gap-4">
-            <span className="font-mono text-primary text-xl">03.</span>
+            
             Featured Projects
             <span className="hidden md:block h-px bg-border flex-1 ml-4" />
           </h2>
