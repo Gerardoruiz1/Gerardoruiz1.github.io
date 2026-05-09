@@ -7,7 +7,8 @@ type Project = {
   github: string;
   /** Live demo or main link; falls back to GitHub when omitted */
   external?: string;
-  period: string;
+  /** Date range or label; omit when not needed */
+  period?: string;
 };
 
 type ProjectSection = {
@@ -59,7 +60,6 @@ const projectSections: ProjectSection[] = [
           "Advanced programming assignment (PA3: fractals) in C++ with openFrameworks—extended the course baseline with custom behavior that depended on recursion, drawing primitives, and a clean project layout so changes stayed testable and easy to reason about.",
         technologies: ["C++", "openFrameworks", "Makefile"],
         github: "https://github.com/Gerardoruiz1/fractalvizualizer",
-        period: "Course project",
       },
       {
         title: "Simon Says (color pattern game)",
@@ -67,7 +67,6 @@ const projectSections: ProjectSection[] = [
           "Simon-style memory game in C++ using openFrameworks: color/sound sequences, player input validation, and round progression with a standard apps/myApps build workflow (Makefile and VS Code tasks).",
         technologies: ["C++", "openFrameworks", "Game logic"],
         github: "https://github.com/Gerardoruiz1/Simon-Says_color-pattern-game",
-        period: "Course project",
       },
     ],
   },
@@ -84,7 +83,7 @@ function ProjectRow({
   const imageOnRight = index % 2 === 1;
 
   return (
-    <article className="grid gap-8 md:grid-cols-2 md:gap-10 md:items-start lg:gap-14 pb-20 border-b border-border last:border-b-0 last:pb-0">
+    <article className="grid gap-8 md:grid-cols-2 md:gap-10 md:items-start lg:gap-14 pb-20 last:pb-0">
       {/* Preview block — order swaps on alternating rows */}
       <div className={imageOnRight ? "md:order-2" : "md:order-1"}>
         <a
@@ -103,7 +102,9 @@ function ProjectRow({
 
       {/* Copy block — always readable, left-aligned in its column */}
       <div className={`space-y-4 min-w-0 ${imageOnRight ? "md:order-1" : "md:order-2"}`}>
-        <p className="font-mono text-xs uppercase tracking-wider text-muted-foreground">{project.period}</p>
+        {project.period ? (
+          <p className="font-mono text-xs uppercase tracking-wider text-muted-foreground">{project.period}</p>
+        ) : null}
         <h3 className="text-2xl font-bold leading-tight text-foreground md:text-3xl">
           <a
             href={previewHref}
