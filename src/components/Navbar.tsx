@@ -32,7 +32,7 @@ export function Navbar() {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="text-xl font-mono font-bold text-gradient hover:glow-text transition-all"
+          className="text-xl font-mono font-bold text-foreground transition-opacity hover:opacity-80"
         >
           {"<Dev />"}
         </a>

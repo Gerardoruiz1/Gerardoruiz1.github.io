@@ -4,9 +4,9 @@ import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 export function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
-      {/* Background gradient orbs */}
-      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
+      {/* Subtle depth — near-black only */}
+      <div className="absolute top-1/4 -left-32 w-96 h-96 bg-white/[0.04] rounded-full blur-3xl animate-float" />
+      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-white/[0.025] rounded-full blur-3xl animate-float" style={{ animationDelay: "3s" }} />
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto">

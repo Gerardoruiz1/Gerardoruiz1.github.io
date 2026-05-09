@@ -1,5 +1,3 @@
-import { Briefcase } from "lucide-react";
-
 const experiences = [
   {
     role: "Software Engineer, Co-Founder",
@@ -8,6 +6,14 @@ const experiences = [
     bullets: [
       "Improved user productivity by 200% and reduced daily social media usage by 50% (from 4 to 2 hours) by deploying a Swift-based blocker app to the App Store using Apple's ScreenTime APIs and MVVM architecture.",
       "Acquired 100+ active users by converting insights from 115+ user interviews into core product features, ensuring customer-centric development and full SDLC implementation from concept to deployment.",
+    ],
+  },
+  {
+    role: "Software Engineer Intern",
+    company: "Honeywell",
+    period: "June 2026 – August 2026",
+    bullets: [
+      "Software engineering internship contributing to design, implementation, and testing alongside Honeywell product engineering teams.",
     ],
   },
   {
